@@ -14,12 +14,12 @@ for (let i = 0; i < songs.length; i++) {
 
   template += `
   <div style = "outline: 1px solid black" class="col-3">
-  <p>Make: ${song.title}</p>
   <img src="${song.albumArt}">
-  <p>${song.artist}</p>
-  <p>${song.collection}</p>
-  <p>${song.price}</p>
-  <audio src="${song.preview}"</audio>
+  <p>Song: ${song.title}</p>
+  <p>Artist: ${song.artist}</p>
+  <p>Album: ${song.collection}</p>
+  <p>Price: ${song.price}</p>
+  <audio class="audio" controls="controls" src="${song.preview}"</audio>
 </div>
   `
   
