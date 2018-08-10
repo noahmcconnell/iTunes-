@@ -6,7 +6,7 @@ const itunesService = new ItunesService()
 
 function drawSongs(songs) {
   console.log(songs)
-  //YOUR CODING STARTS HERE
+  
 let template = ''
 
 for (let i = 0; i < songs.length; i++) {
