@@ -4,11 +4,28 @@ import ItunesService from "./itunes-service.js";
 
 const itunesService = new ItunesService()
 
-function drawSongs(results) {
-  console.log(results)
+function drawSongs(songs) {
+  console.log(songs)
   //YOUR CODING STARTS HERE
+let template = ''
 
+for (let i = 0; i < songs.length; i++) {
+  const song = songs[i];
 
+  template += `
+  <div style = "outline: 1px solid black" class="col-3">
+  <p>Make: ${song.title}</p>
+  <img src="${song.albumArt}">
+  <p>${song.artist}</p>
+  <p>${song.collection}</p>
+  <p>${song.price}</p>
+  <audio src="${song.preview}"</audio>
+</div>
+  `
+  
+}
+
+document.getElementById('songs').innerHTML = template
 
 }
 
