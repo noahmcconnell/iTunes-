@@ -13,7 +13,7 @@ for (let i = 0; i < songs.length; i++) {
   const song = songs[i];
 
   template += `
-  <div style = "outline: 1px solid black" class="col-3">
+  <div id ="track" style = "outline: 1px solid black" class="col-3">
   <img src="${song.albumArt}">
   <p>Song: ${song.title}</p>
   <p>Artist: ${song.artist}</p>
@@ -28,7 +28,14 @@ for (let i = 0; i < songs.length; i++) {
 document.getElementById('songs').innerHTML = template
 
 }
-
+document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('audio');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, true);
 
 //PUBLIC
 class ItunesController {

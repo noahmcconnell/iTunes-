@@ -1,3 +1,13 @@
 body {
-   background-color: aqua;
+background: black;
+height: 100%;
 }
+
+
+#track{
+margin: 5px;
+background-color: rgba(105, 105, 105, 0.336);
+color: rgb(255, 0, 0);
+
+}
+
