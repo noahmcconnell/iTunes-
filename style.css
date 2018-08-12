@@ -1,13 +1,30 @@
 body {
+position: relative;
 background: black;
 height: 100%;
 }
 
 
 #track{
-margin: 5px;
-background-color: rgba(105, 105, 105, 0.336);
-color: rgb(255, 0, 0);
+background-color: rgba(0, 247, 255, 0.678);
+font-weight: bold;
+color: rgb(0, 0, 0);
 
 }
 
+.form-inline{
+    padding-top: 50px;
+    margin-left: 40%;
+    padding-bottom: 50px;
+}
+
+#songs{
+    display: flex;
+    justify-content: center;
+}
+
+#top{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+}
