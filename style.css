@@ -4,12 +4,10 @@ background: black;
 height: 100%;
 }
 
-
 #track{
 background-color: rgba(0, 247, 255, 0.678);
 font-weight: bold;
 color: rgb(0, 0, 0);
-
 }
 
 .form-inline{

@@ -35,8 +35,6 @@ class ItunesService {
     console.log(songs)
   }
 
-  
-  
   getMusicByArtist(artist) {
 
     var url1 = '//bcw-getter.herokuapp.com/?url=';
@@ -44,7 +42,6 @@ class ItunesService {
     var apiUrl = url1 + encodeURIComponent(url2);
     //Casts each object to 
     return $.getJSON(apiUrl).then(function (response) {
-      debugger
       var songList = response.results.map(s => {
         return new Song(s)
       })
@@ -52,22 +49,6 @@ class ItunesService {
     })
   }
 }
-  
-  
-  
-  
-  
-  
-  //   getMusicByArtist(artist) {
-    //     var url = 'https://itunes.apple.com/search?callback=?&term=' + artist;
-    //     // @ts-ignore
-    //     return $.getJSON(url)
-    //       .then(res => res.results.map(s => new Song(s)))
-    //       .catch(err => console.log(err))
-    //   }
-    // }
-    
-    //DO NOT MODIFY
 
 
 export default ItunesService
