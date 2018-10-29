@@ -1,28 +1,42 @@
 body {
-position: relative;
-background: black;
-height: 100%;
+  position: relative;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), yellow);
+  height: 0%;
 }
 
-#track{
-background-color: rgba(0, 247, 255, 0.678);
-font-weight: bold;
-color: rgb(0, 0, 0);
+#track {
+  background-color: rgba(0, 247, 255, 0.678);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
-.form-inline{
-    padding-top: 50px;
-    margin-left: 40%;
-    padding-bottom: 50px;
+.form-inline {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+  width: 43% !important;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-#songs{
-    display: flex;
-    justify-content: center;
+#songs {
+  display: flex;
+  justify-content: center;
 }
 
-#top{
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 0, 0);
+#top {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  color: rgb(255, 0, 0);
+  font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
 }

@@ -12,9 +12,8 @@ for (let i = 0; i < songs.length; i++) {
 
   template += `
   <div id ="track" style = "outline: 1px solid black" class="col-3">
-  <img src="${song.albumArt}">
   <p>Song: ${song.title}</p>
-  <p>Artist: ${song.artist}</p>
+  <img src="${song.albumArt}">
   <p>Album: ${song.collection}</p>
   <p>Price: ${song.price}</p>
   <audio class="audio" controls="controls" src="${song.preview}"</audio>
