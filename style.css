@@ -1,11 +1,10 @@
 body {
   position: relative;
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), yellow);
-  height: 0%;
+  background-image: linear-gradient(to bottom right, black, maroon);
 }
 
 #track {
-  background-color: rgba(0, 247, 255, 0.678);
+  background-color: rgba(0, 247, 255, 0);
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
