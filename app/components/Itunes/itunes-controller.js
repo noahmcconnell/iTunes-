@@ -11,7 +11,7 @@ for (let i = 0; i < songs.length; i++) {
   const song = songs[i];
 
   template += `
-  <div id ="track" style = "color: white; padding-bottom: 2rem" class="col-sm-4";>
+  <div id ="track" style = "color: grey; padding-bottom: 2rem" class="col-sm-4";>
   <p>Song: ${song.title}</p>
   <img src="${song.albumArt}">
   <p>Album: ${song.collection}</p>
