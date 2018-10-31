@@ -18,7 +18,7 @@ body {
 .form-control {
   display: flex;
   justify-content: center;
-  width: 43% !important;
+  width: 35% !important;
 }
 .form-group {
   display: flex;
